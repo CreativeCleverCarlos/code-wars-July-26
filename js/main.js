@@ -12,3 +12,31 @@ function seatsInTheater(nCols, nRows, col, row) {
   }
 
   console.log(seatsInTheater(16,11,5,3))
+
+/**
+ We need a function that can transform a number (integer) into a string.
+
+**/
+
+
+
+  function numberToString(num) {
+    return num.toString()
+  }
+
+  console.log(numberToString(1))
+
+  /**
+   In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+  **/
+
+   function highAndLow(numbers){
+    let split = numbers.split(" ")
+    return `${Math.max(...split)} ${Math.min(...split)}`; //my answer was wrong because i didn't have the ...
+
+    // the 3 dot operator or ... is the spread Operator, think of it like a loop statement that saves time
+  }
+
+  console.log(highAndLow("1 2 3 4 5"))
+
+  
